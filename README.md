@@ -65,7 +65,7 @@ sudo gitlab-ctl reconfigure
 Restart GitLab
 
 ```
-sudo gitlab-ctl rerestartboot
+sudo gitlab-ctl restart
 ```
 
 
