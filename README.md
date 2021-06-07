@@ -17,6 +17,8 @@ Install Postix
 sudo apt-get install -y postfix
 ```
 
+![alt text](postfix.png)
+
 Downlod install script
 
 ```
