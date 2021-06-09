@@ -54,7 +54,7 @@ Change port 8080 to 8081
 - `gitlab_workhorse['auth_backend'] = "http://localhost:8081"`
 - `unicorn['worker_timeout'] = 60`
 - `unicorn['worker_processes'] = 2`
-- `unicorn['port'] = 8080`
+- `unicorn['port'] = 8081`
 
 Reconfig GitLab
 
