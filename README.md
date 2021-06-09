@@ -69,8 +69,52 @@ sudo gitlab-ctl restart
 ```
 
 
+## Openjdk
+
+To find the current Javer version, first search for `openjdk`. Then select the current version.
+
+```
+sudo apt search openjdk
+```
+
+Install Java
+
+```
+sudo apt install openjdk-[Version]-jdk -y
+```
+
 ### Jenkins
 
+Add public jenkins key
+
+```
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+```
+
+Add Jenken to paketmanager
+
+```
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \
+    /etc/apt/sources.list.d/jenkins.list'
+```
+
+Update packet list to find Jenkins
+
+```
+sudo apt-get update
+```
+
+Install Jenkins on server
+
+```
+sudo apt-get install jenkins -y
+```
+
+Find password
+
+```
+sudo nano /var/lib/jenkins/secrets/initialAdminPassword
+```
 
 
 
